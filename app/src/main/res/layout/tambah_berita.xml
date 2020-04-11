@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60sp"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Berita"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_judul_berita"
+        android:layout_width="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:background="@drawable/input_field"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="25dp"
+        android:hint="judul berita"
+        android:layout_below="@id/ll_tv"
+        android:textColor="@color/new_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_judul_berita">
+
+        <ImageView
+        android:id="@+id/img_berita"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/input_gambar_field"
+        android:scaleType="center"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ambil foto"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinnerKategori"
+        android:layout_width="280dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_gambar_field"
+        android:layout_below="@id/rl_gambar"/>
+
+    <EditText
+        android:id="@+id/et_isi_berita"
+        android:layout_width="280dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="isi berita"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_field"
+        android:layout_below="@id/spinnerKategori" />
+    
+    <Button
+        android:id="@+id/btn_kirim_berita"
+        android:layout_width="250dp"
+        android:layout_height="50sp"
+        android:text="kirim"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="38dp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_below="@id/et_isi_berita"/>
+
+</RelativeLayout>
+</ScrollView>
